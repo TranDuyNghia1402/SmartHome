@@ -29,7 +29,7 @@ void main(void)
         HC_SR04_start(trigPin);
         d = HC_SR04_get_distance();
         USART_print_float(d);
-        if (d >= 2 && d < 7) {
+        if (d >= 2 && d < 5) {
             servo_set_angle(180);
             delay_ms(3000);
         }
